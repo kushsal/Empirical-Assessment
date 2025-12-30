@@ -4,11 +4,12 @@ from selenium.common import NoSuchElementException, StaleElementReferenceExcepti
 from Utilities.CommonUtilities import BaseDriverCode
 from POM.Link1 import link_1
 
-@pytest.mark.usefixtures("setupBrowser")
+@pytest.mark.usefixtures("setupBrowser", "per_test_logger")
 class TestCase1(BaseDriverCode):
     def test_case1(self, test_url):
         try:
             self.driver.get(test_url)
+            self.log.info(f"URL to be opened: {test_url}")
             self.verifyElementPresence("//button[text()='Click me']").click()
             #WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//button[text()='Click me']"))).click()
             handles = self.driver.window_handles
@@ -20,10 +21,12 @@ class TestCase1(BaseDriverCode):
             assert signup_btn.is_enabled()
         except (NoSuchElementException, StaleElementReferenceException, ElementNotVisibleException,
                     ElementNotInteractableException) as e:
+            self.log.debug(f"There was some error in locating the element: {e}")
             pytest.fail(f"There was some error in locating the element: {e}")
 
     def test_case2(self, test_url):
         try:
+            self.log.info(f"URL to be opened: {test_url}")
             self.driver.get(test_url)
             testlink = link_1(self.driver)
             testlink.switchToiFrame()
@@ -38,4 +41,5 @@ class TestCase1(BaseDriverCode):
             assert search_area.is_displayed()
             assert search_area.is_enabled()
         except (NoSuchElementException, StaleElementReferenceException, ElementNotVisibleException, ElementNotInteractableException) as e:
+            self.log.debug(f"There was some error in locating the element: {e}")
             pytest.fail(f"There was some error in locating the element: {e}")

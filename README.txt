@@ -2,6 +2,7 @@
 
 A robust, scalable Selenium-Pytest automation framework built for empirical UI assessment and data-driven testing. Designed and maintained by Kushal, a Senior Test Engineer and certified Scrum Master passionate about Agile quality and maintainable automation.
 
+
 ## Overview
 
 This framework supports:
@@ -11,6 +12,7 @@ This framework supports:
 - HTML reporting via `pytest-html`
 - Modular POM structure
 - Utility-driven design for reusability
+- Logger functionality for individual test cases
 
 
 ## 📁 Project Structure

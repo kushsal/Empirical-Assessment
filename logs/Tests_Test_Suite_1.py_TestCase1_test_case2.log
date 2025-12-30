@@ -1,0 +1,10 @@
+2025-12-29 16:47:55,329 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :Excel path: C:\Users\Kusha\PycharmProjects\EmpiricalAssessment\TestData\List_of_URLs.xlsx
+2025-12-29 16:47:55,330 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :Test Case name: test_case2
+2025-12-29 18:03:58,778 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :Excel path: C:\Users\Kusha\PycharmProjects\EmpiricalAssessment\TestData\List_of_URLs.xlsx
+2025-12-29 18:03:58,779 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :Test Case name: test_case2
+2025-12-30 18:01:32,567 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :Excel path: C:\Users\Kusha\PycharmProjects\EmpiricalAssessment\TestData\List_of_URLs.xlsx
+2025-12-30 18:01:32,568 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :Test Case name: test_case2
+2025-12-30 18:01:32,580 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :URL to be opened: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target
+2025-12-30 18:11:02,996 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :Excel path: C:\Users\Kusha\PycharmProjects\EmpiricalAssessment\TestData\List_of_URLs.xlsx
+2025-12-30 18:11:02,998 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :Test Case name: test_case2
+2025-12-30 18:11:03,009 :INFO :Tests_Test_Suite_1.py_TestCase1_test_case2 :URL to be opened: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target
